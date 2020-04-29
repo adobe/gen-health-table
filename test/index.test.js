@@ -17,12 +17,12 @@ test('success', async () => {
   repos = []
   tableData = await index(repos)
   markdown = tableData.join('\n')
-  expect(markdown).toEqual(fixtureFile('empty.md'))
+  expect(markdown).toMatchFixture('empty.md')
 
   repos = ['foo/bar']
   tableData = await index(repos)
   markdown = tableData.join('\n')
-  expect(markdown).toEqual(fixtureFile('onerepo.md'))
+  expect(markdown).toMatchFixture('onerepo.md')
 })
 
 test('error', async () => {
