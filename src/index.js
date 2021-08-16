@@ -16,7 +16,7 @@ governing permissions and limitations under the License.
  * @returns {string} the generated Markdown table row
  */
 function genRow (pkName) {
-  return `| @${pkName}  ` +
+  return `| [@${pkName}](https://github.com/${pkName})` +
          `| [![Version](https://img.shields.io/npm/v/@${pkName}.svg)](https://npmjs.org/package/@${pkName})` +
          `| [![Downloads/week](https://img.shields.io/npm/dw/@${pkName}.svg)](https://npmjs.org/package/@${pkName})` +
          `| [![Node.js CI](https://github.com/${pkName}/actions/workflows/node.js.yml/badge.svg)](https://github.com/${pkName}/actions/workflows/node.js.yml)` +
